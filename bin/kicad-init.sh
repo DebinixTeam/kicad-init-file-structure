@@ -46,20 +46,6 @@ then
     exit
 fi
 
-# Test if curl is installed
-command -v tree
-if [ $? -ne 1 ]
-then
-    echo "tree is not installed!"
-    echo "Please install with"
-    echo
-    echo "sudo apt install tree"
-    echo
-    echo "and try again ..."  
-    exit
-fi
-
-
 # Get user project name from the first argument
 SCRIPT=$(basename "$0")
 PROJECT_NAME=$1
@@ -115,7 +101,5 @@ touch "$OUTDIR_IMG"/placeholder-for-missing-photographs
 touch $(pwd)/"$PROJECT_NAME"/kicad/placeholder-for-missing-schematic-pdf
 
 echo "Created four placeholder files ..."
-
-tree -a
 
 echo "All done -- thank you!"
