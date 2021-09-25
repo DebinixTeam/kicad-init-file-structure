@@ -34,7 +34,7 @@ set -e
 
 
 # Test if curl is installed
-command -v curl
+command -v curl > /dev/null
 if [ $? -ne 0 ]
 then
     echo "curl is not installed!"
@@ -53,7 +53,7 @@ PROJECT_NAME=$1
 if [ $# -ne 1 ]
 then
     echo "Missing an acceptable project name ($1) after $SCRIPT"
-    echo "Please try agin, and no spaces in the name -- terminating now."
+    echo "Please try again, and no spaces in the name -- terminating now."
     exit
 fi
 
