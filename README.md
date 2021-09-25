@@ -38,7 +38,7 @@ The script creates following directory structure for the new KiCad project:
         ├── images
         │   └── placeholder-for-missing-photographs.png
         │
-        ├── kicad      
+        ├── kicad5      
         │   ├── placeholder-for-missing-schematic-pdf
         │   ├── new-project-name-footprints.pretty
         │   └── new-project-name-symbols
@@ -56,10 +56,10 @@ Now, start KiCad in the `new-project-name/kicad` directory, create the new proje
 
 ## Directory contents
 
-* **/new-project-name/kicad/new-project-name** - KiCad project, schema and board design files
+* **/new-project-name/kicad5/new-project-name** - KiCad project, schema and board design files
 * **/new-project-name/libs-downloaded** - schema symbols, footprints, and 3D models downloaded from e.g [SnapEDA](https://www.snapeda.com/home/), [UltraLibrarian](https://www.ultralibrarian.com), [Componentsearch](https://componentsearchengine.com), and [grabcad](https://grabcad.com).
-* **/new-project-name/kicad/new-project-name-symbols** - schematic symbols drawn by yourself
-* **/new-project-name/kicad/new-project-name-footprints.pretty** - footprints drawn by yourself
+* **/new-project-name/kicad5/new-project-name-symbols** - schematic symbols drawn by yourself
+* **/new-project-name/kicad5/new-project-name-footprints.pretty** - footprints drawn by yourself
 * **/new-project-name/fabrication** - fabrication output files, bom, gerbers
 * **/new-project-name/images** - photographs of the created design
 

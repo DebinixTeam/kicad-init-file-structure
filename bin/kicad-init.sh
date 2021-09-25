@@ -58,15 +58,15 @@ then
 fi
 
 
-echo "Continues now, setting up KiCad directory structure for $PROJECT_NAME ..."
+echo "Continues now, setting up kicad5 directory structure for $PROJECT_NAME ..."
 
 
 # Build a complete KiCad project hierarchy
 OUTDIR_FAB="$(pwd)/$PROJECT_NAME/fabrication/gerbers"
 OUTDIR_IMG="$(pwd)/$PROJECT_NAME/images"
 
-OUTDIR_CAD1="$(pwd)/$PROJECT_NAME/kicad/$PROJECT_NAME-footprints.pretty"
-OUTDIR_CAD2="$(pwd)/$PROJECT_NAME/kicad/$PROJECT_NAME-symbols"
+OUTDIR_CAD1="$(pwd)/$PROJECT_NAME/kicad5/$PROJECT_NAME-footprints.pretty"
+OUTDIR_CAD2="$(pwd)/$PROJECT_NAME/kicad5/$PROJECT_NAME-symbols"
 
 OUTDIR_LIB1="$(pwd)/$PROJECT_NAME/libs-downloaded/footprints.pretty"
 OUTDIR_LIB2="$(pwd)/$PROJECT_NAME/libs-downloaded/3d-models"
@@ -98,7 +98,7 @@ echo "Copied .gitignore, README.md and the LICENSE.md files, please update these
 touch $(pwd)/"$PROJECT_NAME"/fabrication/place-holder-for-missing-bom-file
 touch "$OUTDIR_FAB"/placeholder-for-missing-zip-archive
 touch "$OUTDIR_IMG"/placeholder-for-missing-photographs
-touch $(pwd)/"$PROJECT_NAME"/kicad/placeholder-for-missing-schematic-pdf
+touch $(pwd)/"$PROJECT_NAME"/kicad5/placeholder-for-missing-schematic-pdf
 
 echo "Created four placeholder files ..."
 
