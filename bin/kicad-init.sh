@@ -35,7 +35,7 @@ set -e
 
 # Test if curl is installed
 command -v curl
-if [ $? -ne 1 ]
+if [ $? -ne 0 ]
 then
     echo "curl is not installed!"
     echo "Please install with"
