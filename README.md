@@ -7,7 +7,7 @@
 The `kicad-init` script creates directories for a new project. The shell script initiates the disk folder structure in a consistent manner.
 Files and directories are named identical except for the KiCad-project name.
 
-There are five zero bytes files that acts as placeholders for missing files (like the above image), and these should be replaced with real files.
+There are some zero bytes files that acts as placeholders for missing files (like the above image), and these should be replaced with real files.
 
 ## Install the script
 
@@ -42,6 +42,8 @@ The script creates following directory structure for the new KiCad project:
         │       └── placeholder-for-missing-zip-archive
         ├── images
         │   └── placeholder-for-missing-photographs
+        ├── datasheets
+        │   └── placeholder-for-missing-datasheet-files
         ├── kicad5
         │   ├── new-project-name-3D-models
         │   ├── new-project-name-footprints.pretty
@@ -65,6 +67,7 @@ Now, start KiCad in the `new-project-name/kicad5` directory, create the new proj
 * **/new-project-name/fabrication** - fabrication output files; eg bom, gerbers, assembly footprint position
 * **/new-project-name/images** - photographs of the created design
 * **/new-project-name/schematic-diagram** - schematic diagram for the created design
+* **/new-project-name/datasheets** - important datasheets
 
 ## License Information
 -------------------
