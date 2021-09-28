@@ -30,6 +30,7 @@ The script creates following directory structure for the new KiCad project:
 
         ~/KICAD-2021/new-project-name$ tree -a
         ├── 3rd-parties-libraries
+        │   ├── tmp        
         │   ├── 3D-models
         │   ├── footprints.pretty
         │   └── schematic-symbols

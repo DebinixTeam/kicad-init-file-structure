@@ -74,10 +74,11 @@ OUTDIR_CAD3="$(pwd)/$PROJECT_NAME/kicad5/$PROJECT_NAME-3D-models"
 OUTDIR_LIB1="$(pwd)/$PROJECT_NAME/3rd-parties-libraries/footprints.pretty"
 OUTDIR_LIB2="$(pwd)/$PROJECT_NAME/3rd-parties-libraries/3D-models"
 OUTDIR_LIB3="$(pwd)/$PROJECT_NAME/3rd-parties-libraries/schematic-symbols"
+OUTDIR_LIB4="$(pwd)/$PROJECT_NAME/3rd-parties-libraries/tmp"
 
 
 # Build list of directories and build directories
-ALL_DIRS="$OUTDIR_FAB1 $OUTDIR_FAB2 $OUTDIR_IMG $OUTDIR_SCHEMATICS $OUTDIR_CAD1 $OUTDIR_CAD2 $OUTDIR_CAD3 $OUTDIR_LIB1 $OUTDIR_LIB2 $OUTDIR_LIB3"
+ALL_DIRS="$OUTDIR_FAB1 $OUTDIR_FAB2 $OUTDIR_IMG $OUTDIR_SCHEMATICS $OUTDIR_CAD1 $OUTDIR_CAD2 $OUTDIR_CAD3 $OUTDIR_LIB1 $OUTDIR_LIB2 $OUTDIR_LIB3 $OUTDIR_LIB4"
 
 for DEST in $ALL_DIRS
 do
