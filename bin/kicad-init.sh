@@ -62,19 +62,22 @@ echo "Continues now, setting up kicad5 directory structure for $PROJECT_NAME ...
 
 
 # Build a complete KiCad project hierarchy
-OUTDIR_FAB="$(pwd)/$PROJECT_NAME/fabrication/gerbers"
+OUTDIR_FAB1="$(pwd)/$PROJECT_NAME/fabrication/gerbers"
+OUTDIR_FAB2="$(pwd)/$PROJECT_NAME/fabrication/assembly"
 OUTDIR_IMG="$(pwd)/$PROJECT_NAME/images"
+OUTDIR_SCHEMATICS="$(pwd)/$PROJECT_NAME/schematic-diagram"
 
 OUTDIR_CAD1="$(pwd)/$PROJECT_NAME/kicad5/$PROJECT_NAME-footprints.pretty"
-OUTDIR_CAD2="$(pwd)/$PROJECT_NAME/kicad5/$PROJECT_NAME-symbols"
+OUTDIR_CAD2="$(pwd)/$PROJECT_NAME/kicad5/$PROJECT_NAME-schematic-symbols"
+OUTDIR_CAD3="$(pwd)/$PROJECT_NAME/kicad5/$PROJECT_NAME-3D-models"
 
-OUTDIR_LIB1="$(pwd)/$PROJECT_NAME/libs-downloaded/footprints.pretty"
-OUTDIR_LIB2="$(pwd)/$PROJECT_NAME/libs-downloaded/3d-models"
-OUTDIR_LIB3="$(pwd)/$PROJECT_NAME/libs-downloaded/symbols"
+OUTDIR_LIB1="$(pwd)/$PROJECT_NAME/3rd-parties-libraries/footprints.pretty"
+OUTDIR_LIB2="$(pwd)/$PROJECT_NAME/3rd-parties-libraries/3D-models"
+OUTDIR_LIB3="$(pwd)/$PROJECT_NAME/3rd-parties-libraries/schematic-symbols"
 
 
 # Build list of directories and build directories
-ALL_DIRS="$OUTDIR_FAB $OUTDIR_IMG $OUTDIR_CAD1 $OUTDIR_CAD2 $OUTDIR_LIB1 $OUTDIR_LIB2 $OUTDIR_LIB3"
+ALL_DIRS="$OUTDIR_FAB1 $OUTDIR_FAB2 $OUTDIR_IMG $OUTDIR_SCHEMATICS $OUTDIR_CAD1 $OUTDIR_CAD2 $OUTDIR_CAD3 $OUTDIR_LIB1 $OUTDIR_LIB2 $OUTDIR_LIB3"
 
 for DEST in $ALL_DIRS
 do
@@ -94,12 +97,13 @@ curl https://raw.githubusercontent.com/DebinixTeam/kicad-init-file-structure/mas
 echo "Copied .gitignore, README.md and the LICENSE.md files, please update these files to fit your project: $PROJECT_NAME"
 
 
-# Add the four placeholder files
-touch $(pwd)/"$PROJECT_NAME"/fabrication/place-holder-for-missing-bom-file
-touch "$OUTDIR_FAB"/placeholder-for-missing-zip-archive
+# Add the five placeholder files
+touch "$OUTDIR_FAB1"/placeholder-for-missing-zip-archive
+touch "$OUTDIR_FAB2"/place-holder-for-missing-bom-file
+touch "$OUTDIR_FAB2"/place-holder-for-missing-footprint-position-file
 touch "$OUTDIR_IMG"/placeholder-for-missing-photographs
-touch $(pwd)/"$PROJECT_NAME"/kicad5/placeholder-for-missing-schematic-pdf
+touch "$OUTDIR_SCHEMATICS"/placeholder-for-missing-schematic-pdf
 
-echo "Created four placeholder files ..."
+echo "Created your placeholder files ..."
 
 echo "All done -- thank you!"
