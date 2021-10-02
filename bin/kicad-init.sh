@@ -67,6 +67,7 @@ OUTDIR_FAB2="$(pwd)/$PROJECT_NAME/fabrication/assembly"
 OUTDIR_IMG="$(pwd)/$PROJECT_NAME/images"
 OUTDIR_SCHEMATICS="$(pwd)/$PROJECT_NAME/schematic-diagram"
 OUTDIR_DATASHEETS="$(pwd)/$PROJECT_NAME/datasheets"
+OUTDIR_DWG="$(pwd)/$PROJECT_NAME/board-dimensions"
 
 OUTDIR_CAD1="$(pwd)/$PROJECT_NAME/kicad5/$PROJECT_NAME-footprints.pretty"
 OUTDIR_CAD2="$(pwd)/$PROJECT_NAME/kicad5/$PROJECT_NAME-schematic-symbols"
@@ -79,7 +80,7 @@ OUTDIR_LIB4="$(pwd)/$PROJECT_NAME/3rd-parties-libraries/tmp"
 
 
 # Build list of directories and build directories
-ALL_DIRS="$OUTDIR_FAB1 $OUTDIR_FAB2 $OUTDIR_IMG $OUTDIR_SCHEMATICS $OUTDIR_DATASHEETS $OUTDIR_CAD1 $OUTDIR_CAD2 $OUTDIR_CAD3 $OUTDIR_LIB1 $OUTDIR_LIB2 $OUTDIR_LIB3 $OUTDIR_LIB4"
+ALL_DIRS="$OUTDIR_FAB1 $OUTDIR_FAB2 $OUTDIR_IMG $OUTDIR_SCHEMATICS $OUTDIR_DATASHEETS $OUTDIR_DWG $OUTDIR_CAD1 $OUTDIR_CAD2 $OUTDIR_CAD3 $OUTDIR_LIB1 $OUTDIR_LIB2 $OUTDIR_LIB3 $OUTDIR_LIB4"
 
 for DEST in $ALL_DIRS
 do
@@ -99,13 +100,14 @@ curl https://raw.githubusercontent.com/DebinixTeam/kicad-init-file-structure/mas
 echo "Copied .gitignore, README.md and the LICENSE.md files, please update these files to fit your project: $PROJECT_NAME"
 
 
-# Add the five placeholder files
+# Add the placeholder files
 touch "$OUTDIR_FAB1"/placeholder-for-missing-zip-archive
 touch "$OUTDIR_FAB2"/place-holder-for-missing-bom-file
 touch "$OUTDIR_FAB2"/place-holder-for-missing-footprint-position-file
 touch "$OUTDIR_IMG"/placeholder-for-missing-photographs
 touch "$OUTDIR_SCHEMATICS"/placeholder-for-missing-schematic-pdf
 touch "$OUTDIR_DATASHEETS"/placeholder-for-missing-datasheet-files
+touch "$OUTDIR_DWG"/placeholder-for-missing-dimensional-drawing-file
 
 echo "Created your placeholder files ..."
 
