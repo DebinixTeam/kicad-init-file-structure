@@ -1,4 +1,5 @@
 # Ignore list for KiCAD Projects
+mynotes
 # Temporary files
 *.000
 *.bak
