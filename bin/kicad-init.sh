@@ -70,9 +70,9 @@ OUTDIR_DATASHEETS="$(pwd)/$PROJECT_NAME/datasheets/application-notes"
 OUTDIR_DWG="$(pwd)/$PROJECT_NAME/board-dimensions"
 OUTDIR_PIVATE_NOTES="$(pwd)/$PROJECT_NAME/mynotes"
 
-OUTDIR_CAD1="$(pwd)/$PROJECT_NAME/kicad5/$PROJECT_NAME-footprints.pretty"
-OUTDIR_CAD2="$(pwd)/$PROJECT_NAME/kicad5/$PROJECT_NAME-schematic-symbols"
-OUTDIR_CAD3="$(pwd)/$PROJECT_NAME/kicad5/$PROJECT_NAME-3D-models"
+OUTDIR_CAD1="$(pwd)/$PROJECT_NAME/kicad6/$PROJECT_NAME-footprints.pretty"
+OUTDIR_CAD2="$(pwd)/$PROJECT_NAME/kicad6/$PROJECT_NAME-schematic-symbols"
+OUTDIR_CAD3="$(pwd)/$PROJECT_NAME/kicad6/$PROJECT_NAME-3D-models"
 
 OUTDIR_LIB1="$(pwd)/$PROJECT_NAME/3rd-parties-libraries/footprints.pretty"
 OUTDIR_LIB2="$(pwd)/$PROJECT_NAME/3rd-parties-libraries/3D-models"
