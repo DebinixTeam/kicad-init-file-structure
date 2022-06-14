@@ -44,7 +44,7 @@ The script creates following directory structure for the new KiCad project:
         │   └── placeholder-for-missing-photographs
         ├── datasheets
         │   └── placeholder-for-missing-datasheet-files
-        ├── kicad5
+        ├── kicad6
         │   ├── new-project-name-3D-models
         │   ├── new-project-name-footprints.pretty
         │   └── new-project-name-schematic-symbols
@@ -55,15 +55,15 @@ The script creates following directory structure for the new KiCad project:
 
 ## Start KiCad
 
-Now, start KiCad in the `new-project-name/kicad5` directory, create the new project (`File->New->Project`), and name the new project `new-project-name`. KiCad will create this directory, and populate it with the standard KiCad project-files.
+Now, start KiCad in the `new-project-name/kicad6` directory, create the new project (`File->New->Project`), and name the new project `new-project-name`. KiCad will create this directory, and populate it with the standard KiCad project-files.
 
 ## Directory contents
 
-* **/new-project-name/kicad5/new-project-name** - KiCad project, schema and board design files
+* **/new-project-name/kicad6/new-project-name** - KiCad project, schema and board design files
 * **/new-project-name/3rd-parties-libraries** - schematic symbols, footprints, and 3D models downloaded from e.g [SnapEDA](https://www.snapeda.com/home/), [UltraLibrarian](https://www.ultralibrarian.com), [Componentsearch](https://componentsearchengine.com), and [grabcad](https://grabcad.com).
-* **/new-project-name/kicad5/new-project-name-schematic-symbols** - schematic symbols drawn by yourself
-* **/new-project-name/kicad5/new-project-name-footprints.pretty** - footprints drawn by yourself
-* **/new-project-name/kicad5/new-project-name-3D-models** - 3D-models created by yourself
+* **/new-project-name/kicad6/new-project-name-schematic-symbols** - schematic symbols drawn by yourself
+* **/new-project-name/kicad6/new-project-name-footprints.pretty** - footprints drawn by yourself
+* **/new-project-name/kicad6/new-project-name-3D-models** - 3D-models created by yourself
 * **/new-project-name/fabrication** - fabrication output files; eg bom, gerbers, assembly footprint position
 * **/new-project-name/images** - photographs of the created design
 * **/new-project-name/schematic-diagram** - schematic diagram for the created design
