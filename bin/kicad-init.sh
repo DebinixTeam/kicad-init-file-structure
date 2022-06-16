@@ -107,7 +107,7 @@ touch "$OUTDIR_FAB2"/place-holder-for-missing-bom-file
 touch "$OUTDIR_FAB2"/place-holder-for-missing-footprint-position-file
 touch "$OUTDIR_IMG"/placeholder-for-missing-photographs
 touch "$OUTDIR_SCHEMATICS"/placeholder-for-missing-schematic-pdf
-touch "$OUTDIR_DATASHEETS"/placeholder-for-missing-datasheet-files
+touch "$(pwd)/$PROJECT_NAME/datasheets"/placeholder-for-missing-datasheet-files
 touch "$OUTDIR_DWG"/placeholder-for-missing-dimensional-drawing-file
 
 echo "Created your placeholder files ..."
