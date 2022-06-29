@@ -20,15 +20,15 @@ Download or clone this repository, and then copy the shell script into your $PAT
 
 Run the script in the root of the new KiCad project, with the new project name as argument.
 
-        mkdir ~/KICAD-2021
-        cd KICAD-2021
+        mkdir ~/KICAD-2022
+        cd KICAD-2022
         bash kicad-init "new-project-name"
 
 Note that the directory root for `new-project-name` is setup as a potential github repository, do `git init` to get started.
 
 The script creates following directory structure for the new KiCad project:
 
-        ~/KICAD-2021/new-project-name$ tree -a
+        ~/KICAD-2022/new-project-name$ tree -a
         ├── 3rd-parties-libraries
         │   ├── tmp        
         │   ├── 3D-models
